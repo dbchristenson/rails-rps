@@ -33,7 +33,7 @@ class PagesController < ApplicationController
     @computer_choice = computer_choice()
     @outcome = get_outcome(@player_choice, @computer_choice)
 
-    render({ :template => "play.html.erb" })
+    render({ :template => "pages_templates/play" })
   end
 
   def paper
@@ -41,7 +41,7 @@ class PagesController < ApplicationController
     @computer_choice = computer_choice()
     @outcome = get_outcome(@player_choice, @computer_choice)
 
-    render({ :template => "play.html.erb" })
+    render({ :template => "pages_templates/play" })
   end
 
   def scissors
@@ -49,6 +49,6 @@ class PagesController < ApplicationController
     @computer_choice = computer_choice()
     @outcome = get_outcome(@player_choice, @computer_choice)
 
-    render({ :template => "play.html.erb" })
+    render({ :template => "pages_templates/play" })
   end
 end
